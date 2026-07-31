@@ -1,0 +1,81 @@
+/* 游子昂競選網站｜政見主題頁 共用樣式（沿用主站 index.html 的品牌變數與元件） */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#12A88A;--teal-light:#1ECFAD;--teal-dark:#0C7A65;--gold:#EEC030;--dark:#071622;--dark-2:#0D2A38;--text:#1A2E28;--muted:#557A6E;--pale:#EAF5F1;--white:#fff;--border:#C8E8DF;--radius:12px;--shadow:0 4px 24px rgba(12,122,101,.12)}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--text);background:var(--white);line-height:1.8}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:880px;margin:0 auto;padding:0 24px}
+.section{padding:56px 0}
+.section-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:900;color:var(--dark);margin-bottom:8px}
+.section-title span{color:var(--teal)}
+.section-sub{color:var(--muted);font-size:.95rem;margin-bottom:32px}
+.badge{display:inline-block;background:var(--teal);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.08em;padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;transition:all .2s;border:none}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal-dark)}
+.btn-outline{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.btn-outline:hover{background:var(--teal);color:#fff}
+.tag{display:inline-block;background:var(--pale);color:var(--teal-dark);border-radius:6px;padding:3px 10px;font-size:.8rem;font-weight:700;margin:3px 4px 3px 0}
+
+/* Navbar（與主站一致） */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(7,22,34,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(18,168,138,.25)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px;max-width:1100px;margin:0 auto;padding:0 24px}
+.nav-logo{font-size:1.1rem;font-weight:900;color:#fff;display:flex;align-items:center;gap:10px}
+.nav-logo img{height:28px;width:auto;border-radius:3px}
+.nav-links{display:flex;gap:24px}
+.nav-links a{color:rgba(255,255,255,.75);font-size:.88rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--teal-light)}
+.nav-cta{background:var(--teal);color:#fff;padding:8px 18px;border-radius:6px;font-size:.82rem;font-weight:700}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
+.nav-toggle span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+.mobile-menu{display:none}
+@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-toggle{display:flex}.mobile-menu.open{display:flex;flex-direction:column;background:var(--dark-2);padding:12px 24px 20px}.mobile-menu a{color:rgba(255,255,255,.85);padding:10px 0;font-size:.92rem;border-bottom:1px solid rgba(255,255,255,.08)}}
+
+/* Breadcrumb */
+.breadcrumb{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.breadcrumb a{color:var(--teal-dark);font-weight:600}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* Policy hero */
+.policy-hero{background:linear-gradient(160deg,var(--dark) 0%,var(--dark-2) 60%,#0a2e1e 100%);padding:130px 0 56px;color:#fff}
+.policy-hero .badge{background:var(--gold);color:var(--dark)}
+.policy-hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;line-height:1.3;margin:10px 0 14px}
+.policy-hero p{color:rgba(255,255,255,.78);font-size:1.02rem;max-width:640px}
+.policy-hero .updated{margin-top:18px;font-size:.78rem;color:rgba(255,255,255,.45)}
+
+/* Fact list */
+.fact-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin:20px 0 32px}
+.fact-list li{background:var(--pale);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;font-size:.95rem}
+.fact-list li strong{color:var(--dark)}
+.cite{font-size:.78rem;color:var(--muted)}
+.cite a{color:var(--teal-dark);font-weight:600}
+.cite a:hover{text-decoration:underline}
+
+/* Stance / position blocks */
+.stance-block{border-left:4px solid var(--teal);padding:4px 0 4px 20px;margin:16px 0}
+.stance-block h3{font-size:1.02rem;font-weight:800;color:var(--dark);margin-bottom:6px}
+.stance-block p{font-size:.93rem;color:var(--text)}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0}
+.faq-item h3{font-size:.98rem;font-weight:800;color:var(--dark);margin-bottom:8px}
+.faq-item p{font-size:.9rem;color:var(--muted)}
+
+/* Note / caveat box */
+.note-box{background:#FFF8E5;border:1px solid #F0DFA0;border-radius:var(--radius);padding:16px 20px;font-size:.85rem;color:#6B5A15;margin:24px 0}
+
+/* Sources */
+.source-list{list-style:none;font-size:.82rem;color:var(--muted)}
+.source-list li{margin-bottom:6px}
+.source-list a{color:var(--teal-dark);font-weight:600}
+.source-list a:hover{text-decoration:underline}
+
+/* Footer（與主站一致） */
+.footer{background:var(--dark);padding:40px 0;color:rgba(255,255,255,.6)}
+.footer-content{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;font-size:.85rem}
+.footer-brand strong{color:#fff}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:rgba(255,255,255,.6)}
+.footer-links a:hover{color:var(--teal-light)}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.35)}
