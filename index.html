@@ -69,11 +69,8 @@
     .hero-title{color:var(--teal-light);font-size:1rem;font-weight:500;margin-bottom:24px;letter-spacing:.05em}
     .hero-slogan{font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:900;color:var(--gold);margin-bottom:16px}
     .hero-desc{color:rgba(255,255,255,.7);font-size:1rem;line-height:1.8;margin-bottom:28px}
-    .party-logos-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
-    .party-logos-row{flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:28px}
-    .party-logo-item{display:flex;align-items:center;gap:10px}
-    .party-logo-item img{height:44px;width:auto;border-radius:6px;background:#fff;padding:4px 6px}
-    .party-logo-item span{font-size:.8rem;color:rgba(255,255,255,.75);font-weight:500;white-space:nowrap}
+    .party-logos-row{display:flex;flex-direction:row;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+    .party-logo-plain{height:76px;width:auto;border-radius:10px;background:#fff;padding:6px 10px}
     .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
     .hero-photo-wrap{display:flex;justify-content:center;align-items:center}
     .hero-photo-wrap img{width:340px;height:420px;object-fit:cover;object-position:center top;border-radius:16px;border:2px solid rgba(18,168,138,.4);box-shadow:0 24px 64px rgba(0,0,0,.4)}
@@ -401,26 +398,10 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
         <p class="hero-slogan">游我開始，屏東起行</p>
         <p class="hero-desc">格外農品（股票代號 7401）創辦人，深耕屏東七年。<br>讓公款說清楚，讓屏東格外不同。</p>
         <div class="party-logos-row">
-          <div class="party-logo-item">
-            <img src="images/image-2.jpg" alt="台灣前進陣線">
-            <span>台灣前進陣線</span>
-          </div>
-          <div class="party-logo-item">
-            <img src="images/image-3.jpg" alt="台灣綠黨">
-            <span>台灣綠黨</span>
-          </div>
-          <div class="party-logo-item">
-            <img src="images/image-4.jpg" alt="時代力量">
-            <span>時代力量</span>
-          </div>
-          <div class="party-logo-item">
-            <img src="images/image-5.jpg" alt="台灣基進">
-            <span>台灣基進</span>
-          </div>
-          <div class="party-logo-item">
-            <img src="images/image-6.jpg" alt="小民參政歐巴桑聯盟（小歐盟）">
-            <span>小民參政歐巴桑聯盟（小歐盟）</span>
-          </div>
+          <img src="images/image-3.jpg" alt="台灣綠黨" class="party-logo-plain">
+          <img src="images/image-4.jpg" alt="時代力量" class="party-logo-plain">
+          <img src="images/image-5.jpg" alt="台灣基進" class="party-logo-plain">
+          <img src="images/image-6-crop.jpg" alt="小民參政歐巴桑聯盟（小歐盟）" class="party-logo-plain">
         </div>
         <div class="hero-btns">
           <a href="#platform" class="btn btn-primary">查看政見</a>
