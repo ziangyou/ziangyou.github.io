@@ -1,6 +1,6 @@
 /* 游子昂競選網站｜政見主題頁 共用樣式（沿用主站 index.html 的品牌變數與元件） */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--teal:#12A88A;--teal-light:#1ECFAD;--teal-dark:#0C7A65;--gold:#EEC030;--dark:#071622;--dark-2:#0D2A38;--text:#1A2E28;--muted:#557A6E;--pale:#EAF5F1;--white:#fff;--border:#C8E8DF;--radius:12px;--shadow:0 4px 24px rgba(12,122,101,.12)}
+:root{--teal:#12A88A;--teal-text:#09604F;--teal-light:#1ECFAD;--teal-dark:#0C7A65;--gold:#EEC030;--dark:#071622;--dark-2:#0D2A38;--text:#1A2E28;--muted:#557A6E;--pale:#EAF5F1;--white:#fff;--border:#C8E8DF;--radius:12px;--shadow:0 4px 24px rgba(12,122,101,.12)}
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans TC',sans-serif;color:var(--text);background:var(--white);line-height:1.8}
 a{color:inherit;text-decoration:none}
@@ -8,13 +8,13 @@ img{max-width:100%;display:block}
 .container{max-width:880px;margin:0 auto;padding:0 24px}
 .section{padding:56px 0}
 .section-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:900;color:var(--dark);margin-bottom:8px}
-.section-title span{color:var(--teal)}
+.section-title span{color:var(--teal-text)}
 .section-sub{color:var(--muted);font-size:.95rem;margin-bottom:32px}
 .badge{display:inline-block;background:var(--teal);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.08em;padding:3px 10px;border-radius:99px;margin-bottom:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:8px;font-weight:700;font-size:.95rem;cursor:pointer;transition:all .2s;border:none}
 .btn-primary{background:var(--teal);color:#fff}
 .btn-primary:hover{background:var(--teal-dark)}
-.btn-outline{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.btn-outline{background:transparent;color:var(--teal-text);border:2px solid var(--teal)}
 .btn-outline:hover{background:var(--teal);color:#fff}
 .tag{display:inline-block;background:var(--pale);color:var(--teal-dark);border-radius:6px;padding:3px 10px;font-size:.8rem;font-weight:700;margin:3px 4px 3px 0}
 
