@@ -116,7 +116,7 @@
     .media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
     .media-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .25s}
     .media-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
-    .media-thumb{width:100%;height:140px;background:linear-gradient(135deg,var(--dark-2),var(--teal-dark));display:flex;align-items:center;justify-content:center;font-size:2rem}
+    .media-thumb{width:100%;aspect-ratio:16/9;height:auto;background:linear-gradient(135deg,var(--dark-2),var(--teal-dark));display:flex;align-items:center;justify-content:center;font-size:2rem}
     .media-body{padding:18px 20px}
     .media-source{font-size:.72rem;font-weight:700;color:var(--teal-text);margin-bottom:6px;letter-spacing:.06em}
     .media-body h4{font-size:.92rem;font-weight:700;margin-bottom:6px;line-height:1.5;color:var(--dark)}
@@ -809,7 +809,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
 
       <div class="media-card">
         <div class="media-thumb" style="padding:0;overflow:hidden;">
-          <img src="images/media-1012-morenews.jpg" alt="游子昂在屏東市北區中正路與瑞光路口的競選看板" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+          <img src="images/media-1012-morenews.jpg" alt="游子昂在屏東市北區中正路與瑞光路口的競選看板" style="width:100%;height:100%;object-fit:cover;object-position:center 3%;">
         </div>
         <div class="media-body">
           <div class="media-source">墨新聞・2026.10.12</div>
@@ -821,7 +821,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
 
       <div class="media-card">
         <div class="media-thumb" style="padding:0;overflow:hidden;">
-          <img src="images/media-0815-onstage.jpg" alt="游子昂在南高屏聯合募款餐會上台自我介紹" style="width:100%;height:100%;object-fit:cover;">
+          <img src="images/media-0815-onstage.jpg" alt="游子昂在南高屏聯合募款餐會上台自我介紹" style="width:100%;height:100%;object-fit:cover;object-position:center 42%;">
         </div>
         <div class="media-body">
           <div class="media-source">自由時報・2026.08.15</div>
@@ -844,7 +844,9 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
       </div>
 
       <div class="media-card">
-        <div class="media-thumb">🔬</div>
+        <div class="media-thumb" style="padding:0;overflow:hidden;">
+          <img src="images/media-0722-ftnn.jpg" alt="FTNN新聞網食安法修法報導配圖：食用油與黃豆" style="width:100%;height:100%;object-fit:cover;background:#fff;">
+        </div>
         <div class="media-body">
           <div class="media-source">FTNN新聞網・2026.07.22</div>
           <h4>《食安法》修法擬提高查驗頻率　他提醒：別再只增加法條、累垮基層</h4>
@@ -855,7 +857,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
 
       <div class="media-card">
         <div class="media-thumb" style="padding:0;overflow:hidden;">
-          <img src="images/media-linetoday.jpg" alt="LINE TODAY報導" style="width:100%;height:100%;object-fit:cover;">
+          <img src="images/media-linetoday.jpg" alt="LINE TODAY報導" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
         </div>
         <div class="media-body">
           <div class="media-source">LINE TODAY・2026.06.14</div>
@@ -915,7 +917,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
 
       <div class="media-card">
         <div class="media-thumb" style="padding:0;overflow:hidden;">
-          <img src="images/media-store-16814906.png" alt="經濟部社創月報" style="width:100%;height:100%;object-fit:cover;">
+          <img src="images/media-store-16814906.png" alt="經濟部社創月報" style="width:100%;height:100%;object-fit:cover;object-position:center 0%;">
         </div>
         <div class="media-body">
           <div class="media-source">經濟部社創月報・2026.03</div>
@@ -938,7 +940,9 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
       </div>
 
       <div class="media-card">
-        <div class="media-thumb">📈</div>
+        <div class="media-thumb" style="padding:0;overflow:hidden;">
+          <img src="images/media-1223-moneydj-logo.jpg" alt="格外農品標誌" style="width:100%;height:100%;object-fit:contain;background:#fff;">
+        </div>
         <div class="media-body">
           <div class="media-source">MoneyDJ理財網・2025.12</div>
           <h4>格外農品12/23登錄創櫃板</h4>
@@ -1122,7 +1126,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
       </div>
 
       <div class="media-card">
-        <div class="media-thumb" style="padding:0;overflow:hidden;"><img src="images/media-store-8600868.png" alt="聯合報 星展亞洲社企挑戰賽 台灣12家進百大" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="media-thumb" style="padding:0;overflow:hidden;"><img src="images/media-store-8600868.png" alt="聯合報 星展亞洲社企挑戰賽 台灣12家進百大" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div>
         <div class="media-body">
           <div class="media-source">聯合報・2018.06</div>
           <h4>星展亞洲社企挑戰賽 台灣12家進百大</h4>
@@ -1144,7 +1148,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
       </div>
 
       <div class="media-card">
-        <div class="media-thumb" style="padding:0;overflow:hidden;"><img src="images/media-store-8600981.png" alt="TEDxLoveRiver 專訪格外農品" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="media-thumb" style="padding:0;overflow:hidden;"><img src="images/media-store-8600981.png" alt="TEDxLoveRiver 專訪格外農品" style="width:100%;height:100%;object-fit:cover;object-position:center 0%;"></div>
         <div class="media-body">
           <div class="media-source">TEDxLoveRiver・2016.09</div>
           <h4>一罐果醬，一貫堅持！專訪【格外農品】</h4>
