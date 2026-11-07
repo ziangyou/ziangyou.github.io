@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://ziangyou.tw/policies/human-centered-traffic.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -76,5 +76,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://ziangyou.tw/policies/progress.html</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://ziangyou.tw/policies/progress.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url>
+    <loc>https://ziangyou.tw/policies/park-smoke-free.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
