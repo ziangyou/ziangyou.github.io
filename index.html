@@ -371,7 +371,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
       <a href="#events">活動</a>
       <a href="#media">媒體報導</a>
       <a href="#moments">近期動態</a>
-      <a href="/videos/">短影音</a>
+      <a href="#videos">短影音</a>
       <a href="#donate">政治獻金</a>
       <a href="#contact">聯絡</a>
     </div>
@@ -386,7 +386,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
     <a href="#events" onclick="closeMenu()">活動行事曆</a>
     <a href="#media" onclick="closeMenu()">媒體曝光</a>
     <a href="#moments" onclick="closeMenu()">近期動態</a>
-    <a href="/videos/" onclick="closeMenu()">短影音</a>
+    <a href="#videos" onclick="closeMenu()">短影音</a>
     <a href="#social-embed" onclick="closeMenu()">社群媒體</a>
     <a href="#donate" onclick="closeMenu()">政治獻金</a>
     <a href="/join.html" onclick="closeMenu()">加入我們</a>
@@ -790,6 +790,18 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
     <h2 class="section-title">游子昂的<span>每個時刻</span></h2>
     <p class="section-sub">從創業到參選，媒體報導與競選動態，依時間序完整記錄。</p>
         <div class="media-grid">
+
+      <div class="media-card">
+        <div class="media-thumb" style="padding:0;overflow:hidden;">
+          <img src="images/media-1111-morenews-followup.jpg" alt="墨新聞追蹤報導封面：王婉諭主席與游子昂，勝利星村與西市場，標題「屏東創生成效誰交代？」" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="media-body">
+          <div class="media-source">墨新聞・2026.11.11</div>
+          <h4>［追蹤報導］屏東觀光有計畫，成效誰來交代？勝利星村，大爆負評</h4>
+          <p>墨新聞接續 11 月 8 日的報導，檢視西市場空攤位日租試辦、屏東職人町進駐期限等公開文件，並談及青創基地使用情形，追問成效何時交代。報導指出，游子昂已把景點整合、場館營運、公有創業空間使用三個問題，透過縣長信箱請縣府回應。</p>
+          <a href="https://more-news.tw/765398/" target="_blank" rel="noopener">查看報導 →</a>
+        </div>
+      </div>
 
       <div class="media-card">
         <div class="media-thumb" style="padding:0;overflow:hidden;">
@@ -1313,14 +1325,122 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
   </div>
 </section>
 
+<!-- ======= VIDEOS (短影音；內容由 市民代表\官網影片\build_videos.py 自動產生，勿手改) ======= -->
+<section id="videos" class="section">
+  <div class="container">
+    <div class="badge">短影音</div>
+    <h2 class="section-title">拍給大家看的<span>短影音</span></h2>
+    <p class="section-sub">問政進度、掃街、發面紙，還有台灣前進陣線的 MV 與支持小黨的影片，新的放最上面。點了就能播。10/26 以前的影片稱「參選人」，是當時的規定用語；10/27 抽籤後改稱候選人、15 號。</p>
+    <style>
+      .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+      @media(min-width:768px){.vgrid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}}
+      .vcard{margin:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+      .vcard video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#071622}
+      .vcard figcaption{padding:10px 12px 14px;font-weight:700;line-height:1.5;font-size:.95rem}
+      @media(max-width:480px){.vcard figcaption{font-size:.85rem;padding:8px 10px 10px}}
+      .vdate{display:inline-block;margin-right:8px;padding:1px 8px;border-radius:12px;background:var(--pale);color:var(--teal-dark);font-size:.8rem}
+    </style>
+    <div class="vgrid">
+<!-- VIDEOS:START -->
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1110-zhenghongyi.jpg" src="videos/media/1110-zhenghongyi.mp4"></video>
+        <figcaption><span class="vdate">11/10</span>鄭弘儀：選舉制度對小黨非常不利</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1110-wwy-market.jpg" src="videos/media/1110-wwy-market.mp4"></video>
+        <figcaption><span class="vdate">11/10</span>王婉諭主席陪 15 號掃市場</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1109-homeless.jpg" src="videos/media/1109-homeless.mp4"></video>
+        <figcaption><span class="vdate">11/9</span>無家者聯繫會報：一年開一次，紀錄不給看</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1108-library-birds.jpg" src="videos/media/1108-library-birds.mp4"></video>
+        <figcaption><span class="vdate">11/8</span>總圖玻璃帷幕鳥擊：縣府要貼防窗殺貼紙</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1105-haifeng.jpg" src="videos/media/1105-haifeng.mp4"></video>
+        <figcaption><span class="vdate">11/5</span>海豐淹水追蹤：接海豐圳，時程還沒講</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1101-chance.jpg" src="videos/media/1101-chance.mp4"></video>
+        <figcaption><span class="vdate">11/1</span>選得上嗎？2,193 和 2,330，差 137 票</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1031-market-fire.jpg" src="videos/media/1031-market-fire.mp4"></video>
+        <figcaption><span class="vdate">10/31</span>北區市場消防：滅火器要用對（10/31 當時；消防局、公所 11/3 都已回覆）</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1029-banner.jpg" src="videos/media/1029-banner.mp4"></video>
+        <figcaption><span class="vdate">10/29</span>支持者借我的布條</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1028-minutes.jpg" src="videos/media/1028-minutes.mp4"></video>
+        <figcaption><span class="vdate">10/28</span>代表會議事錄：補 A 漏 B（10/28 當時；11/4 已全部補齊）</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1027-number15.jpg" src="videos/media/1027-number15.mp4"></video>
+        <figcaption><span class="vdate">10/27</span>號次抽籤：15 號</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1021-haifeng.jpg" src="videos/media/1021-haifeng.mp4"></video>
+        <figcaption><span class="vdate">10/21</span>海豐淹水：三封回覆，水要排去哪？</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1019-nhi.jpg" src="videos/media/1019-nhi.mp4"></video>
+        <figcaption><span class="vdate">10/19</span>65 歲免健保費，最痛的是中小企業</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1007-tissue.jpg" src="videos/media/1007-tissue.mp4"></video>
+        <figcaption><span class="vdate">10/7</span>早晚發面紙</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/1003-billboard.jpg" src="videos/media/1003-billboard.mp4"></video>
+        <figcaption><span class="vdate">10/3</span>看板上架</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0904-tw30s.jpg" src="videos/media/0904-tw30s.mp4"></video>
+        <figcaption><span class="vdate">9/22</span>台灣前進 MV 30 秒版</figcaption>
+      </figure>
+      <figure class="vcard">
+        <iframe src="https://www.youtube-nocookie.com/embed/HMBKxPsFWd8" title="2026 台灣前進完整版 MV（台灣綠黨 YouTube 頻道）" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;border:0;background:#071622" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption><span class="vdate">9/22</span>2026 台灣前進完整版 MV（台灣綠黨 YouTube 頻道）</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0815-warehouse.jpg" src="videos/media/0815-warehouse.mp4"></video>
+        <figcaption><span class="vdate">8/16</span>南高屏餐會：倉庫的故事</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0809-lamp-fixed.jpg" src="videos/media/0809-lamp-fixed.mp4"></video>
+        <figcaption><span class="vdate">8/10</span>千禧公園路燈修好了</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0807-lamp.jpg" src="videos/media/0807-lamp.mp4"></video>
+        <figcaption><span class="vdate">8/7</span>千禧公園路燈疑似漏電</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0801-rocket.jpg" src="videos/media/0801-rocket.mp4"></video>
+        <figcaption><span class="vdate">8/1</span>火箭升空派對</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0722-foodsafety.jpg" src="videos/media/0722-foodsafety.mp4"></video>
+        <figcaption><span class="vdate">7/25</span>食安修法</figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="videos/media/0718-bubble-street.jpg" src="videos/media/0718-bubble-street.mp4"></video>
+        <figcaption><span class="vdate">7/18</span>夏日泡泡趴：掃街（路人與小朋友臉部已模糊）</figcaption>
+      </figure>
+<!-- VIDEOS:END -->
+    </div>
+  </div>
+</section>
+
 <!-- ======= MOMENTS (近期動態照片) ======= -->
 <section id="moments" class="section" style="background:var(--pale);">
   <div class="container">
     <div class="badge" style="background:var(--teal);color:#fff;">近期動態</div>
     <h2 class="section-title">走在路上，<span>站在一起</span></h2>
-    <p class="section-sub">跑行程的日常、與台灣前進夥伴並肩的時刻——不是形象照，是真實發生在屏東的畫面。</p>
-    <p style="margin:-8px 0 24px;"><a href="/videos/" style="display:inline-block;padding:10px 20px;border-radius:24px;background:var(--teal);color:#fff;font-weight:700;">🎬 看全部短影音 →</a></p>
-    <figure style="margin:0 0 24px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--white);">
+    <p class="section-sub">跑行程的日常、與台灣前進夥伴並肩的時刻——不是形象照，是真實發生在屏東的畫面。</p>    <figure style="margin:0 0 24px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--white);">
       <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;">
         <iframe src="https://www.youtube-nocookie.com/embed/HMBKxPsFWd8" title="【2026 台灣前進】完整版 MV" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
