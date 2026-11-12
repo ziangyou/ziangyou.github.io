@@ -74,6 +74,15 @@
     .hero-desc{color:rgba(255,255,255,.7);font-size:1rem;line-height:1.8;margin-bottom:28px}
     .party-logos-row{display:flex;flex-direction:row;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
     .party-logo-plain{height:76px;width:auto;border-radius:10px;background:#fff;padding:6px 10px}
+    .vote-bar{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;background:#fff;border:3px solid var(--gold);border-radius:12px;padding:14px 20px;margin:24px 0 0;box-shadow:0 8px 28px rgba(0,0,0,.3)}
+    .vote-bar-text{color:var(--text);font-size:clamp(1.05rem,2.2vw,1.3rem);font-weight:800;line-height:1.5;display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px}
+    .vote-bar-text .vb-date{color:var(--teal-text);font-weight:900;white-space:nowrap}
+    .vote-bar-text .vb-sep{color:var(--muted);font-weight:400}
+    .vote-bar-text .vb-who{white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
+    .vote-bar .num15{font-size:.95rem;width:2.1em;height:2.1em;border-width:.17em}
+    .vote-bar-link{background:var(--teal-text);color:#fff;font-weight:700;font-size:1rem;padding:10px 18px;border-radius:8px;white-space:nowrap}
+    .vote-bar-link:hover{background:#074A3D}
+    @media(max-width:768px){.vote-bar{justify-content:center;text-align:center;padding:14px 16px}.vote-bar-text{justify-content:center}.vote-bar-text .vb-sep{display:none}.vote-bar-link{width:100%;text-align:center;white-space:normal}}
     .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
     .hero-photo-wrap{display:flex;justify-content:center;align-items:center}
     .hero-photo-wrap img{width:340px;height:420px;object-fit:cover;object-position:center top;border-radius:16px;border:2px solid rgba(18,168,138,.4);box-shadow:0 24px 64px rgba(0,0,0,.4)}
@@ -379,6 +388,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
     <button class="nav-toggle" id="menuBtn" aria-label="選單"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
+    <a href="/vote.html" onclick="closeMenu()">11/28 投票資訊</a>
     <a href="#about" onclick="closeMenu()">關於游子昂</a>
     <a href="#platform" onclick="closeMenu()">政見</a>
     <a href="#progress" onclick="closeMenu()">問政進度</a>
@@ -396,6 +406,10 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
 <main id="main">
 <section id="hero">
   <div class="container">
+    <div class="vote-bar" role="note" aria-label="11 月 28 日投票資訊">
+      <p class="vote-bar-text"><span class="vb-date">11/28（六）</span><span class="vb-date">上午 8 點到下午 4 點投票</span><span class="vb-sep">｜</span><span class="vb-who">市民代表候選人 <span class="num15">15</span> 號 游子昂</span></p>
+      <a href="/vote.html" class="vote-bar-link">人在外地？看回屏東投票資訊 →</a>
+    </div>
     <div class="hero-inner">
       <div>
         <div class="hero-badge"><span>🌿</span> 2026 屏東市北區(第四選區)市民代表 候選人 15 號</div>
@@ -1822,6 +1836,7 @@ src="https://www.facebook.com/tr?id=1782786306235550&ev=PageView&noscript=1"
         <a href="#videos">短影音</a>
         <a href="#media">新聞</a>
         <a href="#contact">聯絡</a>
+        <a href="/vote.html">11/28 投票資訊</a>
         <a href="/privacy.html">隱私權政策</a>
       </div>
       <div class="footer-copy">
