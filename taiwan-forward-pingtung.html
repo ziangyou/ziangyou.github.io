@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/policy-pages.css">
   <style>
+    table td{padding:6px 8px;border-bottom:1px solid var(--border)}
     .vote-num{display:inline-flex;align-items:center;justify-content:center;width:1.9em;height:1.9em;border-radius:50%;background:#fff;border:.15em solid #D7261E;color:#D7261E;font-family:"Arial Black",Arial,sans-serif;font-weight:900;line-height:1;vertical-align:middle;margin:0 .15em}
     .party-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
     .party-grid li{list-style:none;background:var(--pale);border-radius:10px;padding:14px 16px}
@@ -33,40 +34,95 @@
     .faq-item p{color:var(--text);font-size:1rem}
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://ziangyou.tw/taiwan-forward-pingtung.html",
-        "url": "https://ziangyou.tw/taiwan-forward-pingtung.html",
-        "name": "台灣前進陣線在屏東：四黨聯合推薦 15 號游子昂",
-        "inLanguage": "zh-TW",
-        "isPartOf": {"@id": "https://ziangyou.tw/"},
-        "about": [
-          {"@type": "Organization", "name": "台灣前進陣線", "url": "https://taiwangogo.tw/"},
-          {"@type": "PoliticalParty", "name": "台灣綠黨"},
-          {"@type": "PoliticalParty", "name": "時代力量"},
-          {"@type": "PoliticalParty", "name": "台灣基進"},
-          {"@type": "PoliticalParty", "name": "小民參政歐巴桑聯盟"}
-        ],
-        "author": {"@type": "Person", "name": "游子昂", "url": "https://ziangyou.tw/"}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ziangyou.tw/taiwan-forward-pingtung.html",
+      "url": "https://ziangyou.tw/taiwan-forward-pingtung.html",
+      "name": "台灣前進陣線在屏東：四黨聯合推薦 15 號游子昂",
+      "inLanguage": "zh-TW",
+      "isPartOf": {
+        "@id": "https://ziangyou.tw/"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://ziangyou.tw/"},
-          {"@type": "ListItem", "position": 2, "name": "台灣前進陣線在屏東", "item": "https://ziangyou.tw/taiwan-forward-pingtung.html"}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "台灣前進陣線是哪幾個政黨？", "acceptedAnswer": {"@type": "Answer", "text": "時代力量、台灣基進、台灣綠黨、小民參政歐巴桑聯盟（小歐盟）四個政黨。"}},
-          {"@type": "Question", "name": "台灣前進陣線在屏東推薦誰？", "acceptedAnswer": {"@type": "Answer", "text": "依台灣前進陣線官網的候選人總覽，屏東縣推薦的是屏東市北區（第四選區）市民代表候選人 15 號游子昂，由台灣綠黨提名。"}}        ]
+      "about": [
+        {
+          "@type": "Organization",
+          "name": "台灣前進陣線",
+          "url": "https://taiwangogo.tw/"
+        },
+        {
+          "@type": "PoliticalParty",
+          "name": "台灣綠黨"
+        },
+        {
+          "@type": "PoliticalParty",
+          "name": "時代力量"
+        },
+        {
+          "@type": "PoliticalParty",
+          "name": "台灣基進"
+        },
+        {
+          "@type": "PoliticalParty",
+          "name": "小民參政歐巴桑聯盟"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "游子昂",
+        "url": "https://ziangyou.tw/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://ziangyou.tw/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "台灣前進陣線在屏東",
+          "item": "https://ziangyou.tw/taiwan-forward-pingtung.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "台灣前進陣線是哪幾個政黨？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "時代力量、台灣基進、台灣綠黨、小民參政歐巴桑聯盟（小歐盟）四個政黨。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "台灣前進陣線在屏東推薦誰？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "依台灣前進陣線官網的候選人總覽，屏東縣推薦的是屏東市北區（第四選區）市民代表候選人 15 號游子昂，由台灣綠黨提名。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "台灣前進陣線的主張是什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "台灣前進陣線由時代力量、台灣基進、台灣綠黨、小民參政歐巴桑聯盟四黨加上無黨籍夥伴組成，聯合投入 2026 年地方選舉，三大主軸是人本交通、守護兒少弱勢、揭露政治真相，口號是「你忙著生活，我們幫你看緊議會」。2026 年在 16 個縣市推薦 35 位候選人。"
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -108,13 +164,74 @@
     <div class="badge">四個政黨</div>
     <h2 class="section-title">台灣前進陣線是哪四個政黨</h2>
     <ul class="party-grid">
-      <li><strong>台灣綠黨</strong>前進陣線成員政黨，游子昂的提名政黨。台灣綠黨是國際綠黨運動的一員，以正式成員身分參與<a href="https://globalgreens.org/?p=11810" target="_blank" rel="noopener">全球綠黨（Global Greens）</a>網絡。</li>
-      <li><strong>時代力量</strong>前進陣線成員政黨，聯合推薦游子昂。</li>
-      <li><strong>台灣基進</strong>前進陣線成員政黨，聯合推薦游子昂。</li>
-      <li><strong>小民參政歐巴桑聯盟</strong>前進陣線成員政黨（簡稱小歐盟），聯合推薦游子昂。</li>
+      <li><strong>台灣綠黨</strong>1996 年創黨，現任共同召集人王彥涵、甘崇緯。以全球綠黨憲章的六大理念為核心：生態智慧、社會正義、參與式民主、非暴力、永續發展、尊重多樣性。台灣綠黨是國際綠黨運動的一員，以正式成員身分參與<a href="https://globalgreens.org/?p=11810" target="_blank" rel="noopener">全球綠黨（Global Greens）</a>網絡。游子昂的提名政黨。</li>
+      <li><strong>時代力量</strong>2015 年成立，現任黨主席王婉諭。聯合推薦游子昂；王婉諭主席 2026 年 11 月 6 日到屏東陪游子昂走訪勝利星村、中山黃昏市場。</li>
+      <li><strong>台灣基進</strong>前身是 2012 年的「基進側翼」，2016 年成黨，現任黨主席王興煥。聯合推薦游子昂。</li>
+      <li><strong>小民參政歐巴桑聯盟</strong>簡稱小歐盟，2017 年以政治團體成立、2019 年成為政黨，現任召集人林詩涵，主打兒童人權與親子友善。聯合推薦游子昂。</li>
     </ul>
+    <p>台灣前進陣線是這四個政黨加上無黨籍夥伴組成的陣線，聯合投入 2026 年地方選舉，同一個選區只推一位。陣線的三大主軸是<strong>人本交通、守護兒少弱勢、揭露政治真相</strong>，口號是「你忙著生活，我們幫你看緊議會」。</p>
+    <p class="cite">各黨資料截至 2026 年 11 月，來源見文末；陣線介紹引自台灣前進陣線官網。</p>
     <p>2026 年地方選舉，台灣前進陣線在全國 16 個縣市推薦 35 位候選人，屏東縣是 1 位。</p>
     <p class="official-links">全部候選人：<a href="https://taiwangogo.tw/candidates/" target="_blank" rel="noopener">台灣前進陣線官網・候選人總覽</a></p>
+
+    <div class="badge">全國 35 位候選人</div>
+    <h2 class="section-title">台灣前進陣線 2026 年推薦的 35 位候選人</h2>
+    <p>16 個縣市、35 位，屏東縣是 15 號游子昂。點名字可以看每一位候選人在台灣前進陣線官網的介紹。</p>
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:.95rem;min-width:560px">
+      <thead><tr style="background:var(--pale)"><th style="text-align:left;padding:8px">縣市</th><th style="text-align:left;padding:8px">候選人</th><th style="text-align:left;padding:8px">號次</th><th style="text-align:left;padding:8px">參選</th><th style="text-align:left;padding:8px">選區</th></tr></thead>
+      <tbody>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/hsieh-min-hung/" target="_blank" rel="noopener">謝閔弘</a></td><td>9</td><td>議員</td><td>士林、北投</td></tr>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/wu-hsin-tai/" target="_blank" rel="noopener">吳欣岱</a></td><td>13</td><td>議員</td><td>內湖、南港</td></tr>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/teng-le-chiang/" target="_blank" rel="noopener">鄧樂強</a></td><td>9</td><td>議員</td><td>松山、信義</td></tr>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/li-hui-hsuan/" target="_blank" rel="noopener">李惠暄</a></td><td>6</td><td>議員</td><td>中山、大同</td></tr>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/wang-chen-ting/" target="_blank" rel="noopener">王振庭</a></td><td>11</td><td>議員</td><td>中正、萬華</td></tr>
+        <tr><td>台北市</td><td><a href="https://taiwangogo.tw/chen-chih-ying/" target="_blank" rel="noopener">陳峙穎</a></td><td>9</td><td>議員</td><td>大安、文山</td></tr>
+        <tr><td>新北市</td><td><a href="https://taiwangogo.tw/kan-chung-wei/" target="_blank" rel="noopener">甘崇緯</a></td><td>1</td><td>議員</td><td>新莊</td></tr>
+        <tr><td>新北市</td><td><a href="https://taiwangogo.tw/chen-wan-yu/" target="_blank" rel="noopener">陳宛毓</a></td><td>16</td><td>議員</td><td>三重、蘆洲</td></tr>
+        <tr><td>新北市</td><td><a href="https://taiwangogo.tw/chang-yu-fu/" target="_blank" rel="noopener">張佑輔</a></td><td>8</td><td>議員</td><td>新店、深坑、石碇、坪林、烏來</td></tr>
+        <tr><td>新北市</td><td><a href="https://taiwangogo.tw/kuo-shu-cheng/" target="_blank" rel="noopener">郭書成</a></td><td>1</td><td>議員</td><td>汐止、萬里、金山</td></tr>
+        <tr><td>基隆市</td><td><a href="https://taiwangogo.tw/wu-cheng-tse/" target="_blank" rel="noopener">吳程澤</a></td><td>3</td><td>議員</td><td>安樂</td></tr>
+        <tr><td>桃園市</td><td><a href="https://taiwangogo.tw/shen-pei-ling/" target="_blank" rel="noopener">沈佩玲</a></td><td>8</td><td>議員</td><td>桃園區</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/li-ya-fen/" target="_blank" rel="noopener">李雅芬</a></td><td>4</td><td>議員</td><td>竹北西</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/chang-yuci/" target="_blank" rel="noopener">張育慈</a></td><td>13</td><td>議員</td><td>竹北東</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/lin-chun-ching/" target="_blank" rel="noopener">林裙靜</a></td><td>8</td><td>議員</td><td>竹東、五峰</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/hung-jui-chin/" target="_blank" rel="noopener">洪瑞瑾</a></td><td>2</td><td>鄉鎮市民代表</td><td>竹北一</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/hsu-yu-lun/" target="_blank" rel="noopener">許育綸</a></td><td>10</td><td>鄉鎮市民代表</td><td>竹北二</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/lin-hsu-liang/" target="_blank" rel="noopener">林旭良</a></td><td>3</td><td>鄉鎮市民代表</td><td>新埔四</td></tr>
+        <tr><td>新竹縣</td><td><a href="https://taiwangogo.tw/peng-chih-hao/" target="_blank" rel="noopener">彭致豪</a></td><td>3</td><td>鄉鎮市民代表</td><td>竹東四</td></tr>
+        <tr><td>新竹市</td><td><a href="https://taiwangogo.tw/tsai-hui-ting/" target="_blank" rel="noopener">蔡惠婷</a></td><td>16</td><td>議員</td><td>東區</td></tr>
+        <tr><td>新竹市</td><td><a href="https://taiwangogo.tw/lin-yen-fu/" target="_blank" rel="noopener">林彥甫</a></td><td>1</td><td>議員</td><td>北區</td></tr>
+        <tr><td>新竹市</td><td><a href="https://taiwangogo.tw/liao-tzu-chi/" target="_blank" rel="noopener">廖子齊</a></td><td>1</td><td>議員</td><td>香山</td></tr>
+        <tr><td>苗栗縣</td><td><a href="https://taiwangogo.tw/wu-yi-li/" target="_blank" rel="noopener">吳翌立</a></td><td>7</td><td>議員</td><td>竹南、後龍、造橋</td></tr>
+        <tr><td>台中市</td><td><a href="https://taiwangogo.tw/tsai-pei-shan/" target="_blank" rel="noopener">蔡佩珊</a></td><td>11</td><td>議員</td><td>北屯</td></tr>
+        <tr><td>台中市</td><td><a href="https://taiwangogo.tw/tsou-ming-yen/" target="_blank" rel="noopener">鄒明諺</a></td><td>3</td><td>議員</td><td>大里、霧峰</td></tr>
+        <tr><td>彰化縣</td><td><a href="https://taiwangogo.tw/chen-yun-chih/" target="_blank" rel="noopener">陳昀志</a></td><td>2</td><td>鄉鎮市民代表</td><td>秀水一</td></tr>
+        <tr><td>雲林縣</td><td><a href="https://taiwangogo.tw/liao-chang-chun/" target="_blank" rel="noopener">廖昶淳</a></td><td>17</td><td>議員</td><td>斗六、林內、莿桐</td></tr>
+        <tr><td>嘉義市</td><td><a href="https://taiwangogo.tw/chen-yueh-chin/" target="_blank" rel="noopener">陳玥妗</a></td><td>8</td><td>議員</td><td>東區</td></tr>
+        <tr><td>嘉義市</td><td><a href="https://taiwangogo.tw/lin-shih-han/" target="_blank" rel="noopener">林詩涵</a></td><td>19</td><td>議員</td><td>西區</td></tr>
+        <tr><td>台南市</td><td><a href="https://taiwangogo.tw/wu-yi-chieh/" target="_blank" rel="noopener">吳依潔</a></td><td>2</td><td>議員</td><td>永康</td></tr>
+        <tr><td>屏東縣</td><td><a href="https://taiwangogo.tw/yu-tzu-ang/" target="_blank" rel="noopener">游子昂</a></td><td>15</td><td>屏東市民代表</td><td>屏東市北區（第四選區）</td></tr>
+        <tr><td>高雄市</td><td><a href="https://taiwangogo.tw/hsueh-chao-chi/" target="_blank" rel="noopener">薛兆基</a></td><td>11</td><td>議員</td><td>左營、楠梓</td></tr>
+        <tr><td>高雄市</td><td><a href="https://taiwangogo.tw/yu-hsien-ling/" target="_blank" rel="noopener">于仙玲</a></td><td>6</td><td>議員</td><td>前鎮、小港</td></tr>
+        <tr><td>宜蘭縣</td><td><a href="https://taiwangogo.tw/liu-chung-shu/" target="_blank" rel="noopener">劉仲書</a></td><td>6</td><td>議員</td><td>宜蘭</td></tr>
+        <tr><td>花蓮縣</td><td><a href="https://taiwangogo.tw/meng-fan-chia/" target="_blank" rel="noopener">孟繁嘉</a></td><td>4</td><td>議員</td><td>吉安、壽豐、鳳林、光復、豐濱、萬榮</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="cite">名單、號次、選區依台灣前進陣線官網候選人總覽（截至 2026-11-13）；號次以各縣市選舉委員會公告為準。</p>
+
+    <div class="badge">陣線的查詢工具</div>
+    <h2 class="section-title">台灣前進陣線網站上的查詢工具</h2>
+    <ul class="fact-list">
+      <li><strong><a href="https://gazette2026.taiwangogo.tw/" target="_blank" rel="noopener">2026 民間版選舉公報</a>：</strong>查縣市長、議員候選人的經歷、財產申報、前次選舉政治獻金收支、選舉補助款和刑事案件紀錄（民間整理、非中選會官方；屏東縣議員有收錄，市民代表沒有收錄）</li>
+      <li><strong><a href="https://council2026.taiwangogo.tw/" target="_blank" rel="noopener">2026 議員參選人刑事紀錄圖鑑</a>：</strong>查議員、縣市長參選人的刑事紀錄（起訴不等於有罪，以原站說明為準）</li>
+      <li><strong><a href="https://taiwangogo.tw/candidates/" target="_blank" rel="noopener">找候選人</a>：</strong>依縣市、選區找台灣前進推薦的候選人</li>
+      <li><strong><a href="https://taiwangogo.tw/play/stock/" target="_blank" rel="noopener">看持股、看車庫、看美食</a>：</strong>查現任議員申報的持股、車輛，以及政治獻金裡的餐飲申報</li>
+      <li><strong><a href="https://taiwangogo.tw/counties/" target="_blank" rel="noopener">縣市儀表板</a>：</strong>各縣市的痛點與相關數據</li>
+      <li><strong><a href="https://taiwangogo.tw/issues/" target="_blank" rel="noopener">議題專頁</a>：</strong>交通安全、兒少權益、揭露真相</li>
+      <li><strong><a href="https://taiwangogo.tw/cases/traffic-deaths-decade/" target="_blank" rel="noopener">數據專題</a>：</strong>十年交通事故死亡 29,018 人</li>
+    </ul>
 
     <div class="badge">在屏東</div>
     <h2 class="section-title">屏東市北區市民代表 <span class="vote-num">15</span> 號游子昂</h2>
@@ -141,10 +258,20 @@
     <h2 class="section-title">常見問題</h2>
     <div class="faq-item"><h3>Q：台灣前進陣線是哪幾個政黨？</h3><p>A：時代力量、台灣基進、台灣綠黨、小民參政歐巴桑聯盟（小歐盟）四個政黨。</p></div>
     <div class="faq-item"><h3>Q：台灣前進陣線在屏東推薦誰？</h3><p>A：依台灣前進陣線官網的候選人總覽，屏東縣推薦的是屏東市北區（第四選區）市民代表候選人 15 號游子昂，由台灣綠黨提名。</p></div>
+    <div class="faq-item"><h3>Q：台灣前進陣線的主張是什麼？</h3><p>A：台灣前進陣線由時代力量、台灣基進、台灣綠黨、小民參政歐巴桑聯盟四黨加上無黨籍夥伴組成，聯合投入 2026 年地方選舉，三大主軸是人本交通、守護兒少弱勢、揭露政治真相，口號是「你忙著生活，我們幫你看緊議會」。2026 年在 16 個縣市推薦 35 位候選人。</p></div>
     <p style="margin-top:24px">相關頁面：<a href="pingtung-north-district.html">屏東市北區市民代表選舉</a>・<a href="vote.html">11 月 28 日投票資訊</a>・<a href="policies/progress.html">問政進度總表</a></p>
 
     <div class="badge" style="margin-top:32px">資料來源</div>
     <ul class="source-list">
+      <li><a href="https://globalgreens.org/" target="_blank" rel="noopener">全球綠黨（Global Greens）與全球綠黨憲章</a></li>
+      <li><a href="https://zh.wikipedia.org/zh-tw/%E6%99%82%E4%BB%A3%E5%8A%9B%E9%87%8F" target="_blank" rel="noopener">時代力量（2015 年成立）｜維基百科</a></li>
+      <li><a href="https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E7%81%A3%E5%9F%BA%E9%80%B2" target="_blank" rel="noopener">台灣基進（前身基進側翼 2012 年、2016 年成黨）｜維基百科</a></li>
+      <li><a href="https://zh.wikipedia.org/zh-tw/%E5%B0%8F%E6%B0%91%E5%8F%83%E6%94%BF%E6%AD%90%E5%B7%B4%E6%A1%91%E8%81%AF%E7%9B%9F" target="_blank" rel="noopener">小民參政歐巴桑聯盟（2017 年政治團體、2019 年成黨、兒童人權與親子友善）｜維基百科</a></li>
+      <li><a href="https://taiwangogo.tw/" target="_blank" rel="noopener">台灣前進是什麼、三大主軸｜台灣前進陣線官網</a></li>
+      <li><a href="https://news.tvbs.com.tw/politics/2983861" target="_blank" rel="noopener">四小黨宣布合作拚 2026、共推議員候選人｜TVBS</a></li>
+      <li><a href="https://n.yam.com/Article/20260125720305" target="_blank" rel="noopener">台灣綠黨創黨三十年（共同召集人甘崇緯、王彥涵）｜蕃新聞 2026-01-25</a></li>
+      <li><a href="https://udn.com/news/story/124652/9660955" target="_blank" rel="noopener">小歐盟召集人林詩涵｜聯合新聞網</a></li>
+      <li><a href="https://www.twreporter.org/a/2026-local-elections-taiwan-go-go" target="_blank" rel="noopener">台灣前進陣線與四黨代表（台灣基進黨主席王興煥）｜報導者</a></li>
       <li><a href="https://globalgreens.org/?p=11810" target="_blank" rel="noopener">台灣綠黨與全球綠黨網絡｜Dafydd Fell 文章，全球綠黨網站轉載（2021-05-21）</a></li>
       <li><a href="https://taiwangogo.tw/candidates/" target="_blank" rel="noopener">候選人總覽（35 位、16 縣市）｜台灣前進陣線</a></li>
       <li><a href="https://newtalk.tw/news/view/2026-06-14/1041218" target="_blank" rel="noopener">前進南高屏　台灣前進陣線跨黨合作推薦 4 位參選人｜新頭殼 2026-06-14</a></li>
